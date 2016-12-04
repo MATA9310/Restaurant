@@ -2,7 +2,7 @@
 
 }
 .customnavbar{
-	background-color: #FFDEAD;
+	background-color: #FFE153;
 	margin-bottom: 0px;
 	border-radius: 0px;
 	height: 60px;
@@ -15,4 +15,5 @@
 .pacifico{
 	font-family: 'Pacifico', cursive;
 	font-size: 20px;
+	color: #CE5100 !important;
 }
