@@ -6,6 +6,7 @@ html(lang = "en")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
+		link( href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet")
 		link(href="css/estilo.css" rel="stylesheet")
 
 		
@@ -13,16 +14,43 @@ html(lang = "en")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
 
 	body
-		header(class="navbar navbar-default customnavbar")
-			div(class="container-fluid")
-				div(class="navbar-header")
-					button(type="button" class="navbar-toggle collapsed" data-toogle="collapse" data-target="#bs-example-nabvar-collapse-1" aria-expanded="false")
-						span(class="sr-only")
-						span(class="icon-bar")
-						span(class="icon-bar")
-						span(class="icon-bar")
-						span(class="icon-bar")
-					a(class="navbar-brand")
-						img(class="logo" src="images/logo2.png" alt="Brand")
-					p(class="pacifico navbar-text") El Sabor de Antequera
+		header
+			nav(class="navbar navbar-default customnavbar")
+				div(class="container-fluid")
+					div(class="navbar-header")
+						button(type="button" class="navbar-toggle collapsed menu_peke" data-toggle="collapse" data-target="#bs-example-nabvar-collapse-1" aria-expanded="false")
+							span(class="sr-only")
+							span(class="icon-bar")
+							span(class="icon-bar")
+							span(class="icon-bar")
+							span(class="icon-bar")
+						a(class="navbar-brand")
+							img(class="logo" src="images/logo2.png" alt="Brand")
+						p(class="pacifico navbar-text") El Sabor de Antequera
+					
+					div(class="collapse navbar-collapse" id="bs-example-nabvar-collapse-1")
+						ul(class="nav navbar-nav navbar-right text-center")
+							li
+								a(href="#") inicio
+							li
+								a(href="#") quienes somos
+							li
+								a(href="#") menu
+							li
+								a(href="#") eventos
+							li
+								a(href="#") contacto
+
+							li( style="max-width: 204px;")
+								form(action="./" method="POST")
+									div(class="input-group" id="div-src")
+										input(type="text" id="input-src" class="form-control")
+										span(class="input-group-btn" id="btn-src")
+											button(class="btn btn-default" type="button")
+												i(class="glyphicon glyphicon-search")
+											a(href="#" class="btn btn-default" id="close-src")
+												i(class="glyphicon glyphicon-remove")
+								a(href="#" id="search")
+									i(class="glyphicon glyphicon-search")
+
 		h1 Hola mundo

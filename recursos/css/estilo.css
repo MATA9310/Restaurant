@@ -1,3 +1,16 @@
+@media screen and (max-width: 728px){
+	/*.customnavbar .brand-logo{
+		margin: 0px auto;
+	}
+	.customnavbar .navbar-header button{
+		margin-top:16px !important;
+		margin-bottom: 0px !important;
+	}*/
+	.customnavbar .navbar-collapse{
+		margin-top:5px !important;
+	}
+}
+
 .letraNom{
 
 }
@@ -5,12 +18,52 @@
 	background-color: #FFE153;
 	margin-bottom: 0px;
 	border-radius: 0px;
-	height: 60px;
+	min-height: 70px;
+}
+.customnavbar .navbar-right{
+	margin-top: 8px;
+}
+
+.customnavbar ul li a{
+	color: #CE5100 !important;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	border-radius: 15px;
+   	transition: all .8s ease;
+
+}
+#div-src{
+	padding: 0px;
+	margin-top: 6px;
+}
+.customnavbar ul li a:hover{
+	background-color: #E8B34A !important;
+	color: #FFE153 !important;
+	transition: all .6s ease;
 }
 .logo{
 	height: 30px;
 	border: 0px;
 	margin: 0px;
+}
+.menu_peke{
+	background-color: #E8B34A !important;
+	border-color: #E8B34A !important;
+	margin-top: 14px;
+	border-radius: 15px;
+   	transition: all .8s ease;
+}
+.menu_peke:hover{
+	background-color: #CE5100 !important;
+	transition: all .6s ease;
+}
+.menu_peke:hover > .icon-bar{
+	background-color: #FFE153 !important;
+	transition: all .6s ease;
+}
+.menu_peke .icon-bar{
+	background-color: #CE5100 !important;
 }
 .pacifico{
 	font-family: 'Pacifico', cursive;
