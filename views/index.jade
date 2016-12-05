@@ -7,41 +7,27 @@ html(lang = "en")
 		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
 		link( href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet")
 		link(href="css/estilo.css" rel="stylesheet")
 
 		
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+		script(src="js/nav-bar.js")
 
 	body
 		header
 			nav(class="navbar navbar-default customnavbar")
 				div(class="container-fluid")
 					div(class="navbar-header")
-						button(type="button" class="navbar-toggle collapsed menu_peke" data-toggle="collapse" data-target="#bs-example-nabvar-collapse-1" aria-expanded="false")
-							span(class="sr-only")
-							span(class="icon-bar")
-							span(class="icon-bar")
-							span(class="icon-bar")
-							span(class="icon-bar")
+						
 						a(class="navbar-brand")
 							img(class="logo" src="images/logo2.png" alt="Brand")
 						p(class="pacifico navbar-text") El Sabor de Antequera
 					
-					div(class="collapse navbar-collapse" id="bs-example-nabvar-collapse-1")
-						ul(class="nav navbar-nav navbar-right text-center")
-							li
-								a(href="#") inicio
-							li
-								a(href="#") quienes somos
-							li
-								a(href="#") menu
-							li
-								a(href="#") eventos
-							li
-								a(href="#") contacto
-
-							li( style="max-width: 204px;")
+					div(class="navbar-header navbar-right" id="buscar")
+						ul(class="nav navbar-nav")
+							li(id="busqueda")
 								form(action="./" method="POST")
 									div(class="input-group" id="div-src")
 										input(type="text" id="input-src" class="form-control")
@@ -50,7 +36,38 @@ html(lang = "en")
 												i(class="glyphicon glyphicon-search")
 											a(href="#" class="btn btn-default" id="close-src")
 												i(class="glyphicon glyphicon-remove")
-								a(href="#" id="search")
-									i(class="glyphicon glyphicon-search")
+								a(href="#" id="search" ) Buscar
+									i(class="glyphicon glyphicon-search pull-left")
 
+							li(class="espacio-izq" id="login")
+								a(href="#") Entrar/Registrar
+									i(class="glyphicon glyphicon-user pull-left")
+			nav(class="navbar navbar-default navbar-m")
+				div(class="container-fluid")
+					div(class="navbar-header")
+					button(type="button" class="navbar-toggle collapsed menu_peke" data-toggle="collapse" data-target="#bs-example-nabvar-collapse-1" aria-expanded="false")
+						span(class="sr-only")
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+					div(class="collapse navbar-collapse" id="bs-example-nabvar-collapse-1")
+						ul(class="nav navbar-nav navbar-left text-center")
+							li
+								a(href="#") Inicio
+							li
+								a(href="#") Nosotros
+							li
+								a(href="#") Eventos
+							li
+								a(href="#") Gastronomia
+
+						ul(class="nav navbar-nav navbar-right text-center")
+							li
+								a(href="#") Sub: $0.00
+									i(class="glyphicon glyphicon-shopping-cart pull-left")
+
+
+			
+								
 		h1 Hola mundo
