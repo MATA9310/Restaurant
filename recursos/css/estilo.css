@@ -137,9 +137,18 @@ nav{
 	color: #FFD574 !important;
 	transition: all .6s ease;
 }
+.navbar-m ul li a:focus{
+	background-color:  #420000!important;
+	color: #FFD574 !important;
+}
 .navbar-m ul li a:hover > i{
 	color: #FFD574 !important;
 	transition: all .6s ease;
+}
+.dropdown-menu{
+	background-color: #E8B34A !important;
+	color: #CE5100 !important;
+	border-radius: 15px;
 }
 /*#input-src{
 	display: none;
