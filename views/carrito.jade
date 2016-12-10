@@ -9,6 +9,7 @@ html(lang = "en")
 		link( href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet")
 		link(href="css/estilo.css" rel="stylesheet")
+		link(href="css/carrito.css" rel="stylesheet")
 
 		
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
@@ -91,39 +92,28 @@ html(lang = "en")
 								a(href="#") Sub: $0.00
 									i(class="glyphicon glyphicon-shopping-cart pull-left")
 
-		div()
-			div()
-				div(id="carrusel1" class="carousel slide" data-ride="carousel")
-					ol(class="carousel-indicators")
-						li(data-target="#carrusel1" data-slide-to="0" class="active")
-						li(data-target="#carrusel1" data-slide-to="1")
-						li(data-target="#carrusel1" data-slide-to="2")
+		div(class="col-md-12 col-xs-12 text-center" id="tit_carrito")
+			img(class="logo" src="images/logo_elsabordeantequera.png" alt="Brand")
 
-					div(class="carousel-inner" role="listbox")
-						div(class="item active")
-							img( src="images/uno.jpg" class="img-responsive tales" alt="")
-							div(class="carousel-caption")
-								h3 Este en nustro Slide #1
-								p Lorem ipsum dolor sit
-						div(class="item")
-							img( src="images/uno.jpg" class="img-responsive tales" alt="")
-							div(class="carousel-caption")
-								h3 Este en nustro Slide #2
-								p Lorem ipsum dolor sit
-						div(class="item")
-							img( src="images/uno.jpg" class="img-responsive tales" alt="")
-							div(class="carousel-caption")
-								h3 Este en nustro Slide #3
-								p Lorem ipsum dolor sit
+		div(class="col-md-12 col-xs-12" id="nav_carrito")
+			p(class="navbar-left text-center") Mi Carrito
+			ul(class="nav navbar-nav navbar-right text-center")
+							li
+								a(href="#") Vaciar Carrito
+									i(class="glyphicon glyphicon-shopping-cart pull-left")
 
-					a(href="#carrusel1" class="left carousel-control" role="button" data-slide="prev")
-						span(class="glyphicon glyphicon-chevron-left" aria-hidden="true")
-						span(class="sr-only") Anterior
-
-					a(href="#carrusel1" class="right carousel-control" role="button" data-slide="next")
-						span(class="glyphicon glyphicon-chevron-right" aria-hidden="true")
-						span(class="sr-only") Anterior
-
-			
-								
-		h1 Hola mundo
+		div(class="table-responsive")
+			table(class="table table-hover")
+				tr
+					th Producto
+					th P. Unit
+					th Cantidad
+					th Subtotal
+					th Operacion
+				tr
+					td Audifonos
+					td $128.00
+					td 5
+					td $500.00
+					td 
+						a(href="#") Eliminar

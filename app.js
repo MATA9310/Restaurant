@@ -10,5 +10,10 @@ app.get("/",function(req,res){
 	//res.send("hola mundo");
 	res.render("index");
 });
+app.get("/carrito",function(req,res){
+	//res.send("hola mundo");
+	res.render("carrito");
+});
+
 
 app.listen(8080);

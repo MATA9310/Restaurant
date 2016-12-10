@@ -1,0 +1,17 @@
+#nav_carrito{
+	background-image: url("/images/trama3.jpg");
+	height: 60px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+}
+#nav_carrito ul li a{
+	padding-top: 20px !important;
+	color: blue !important;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	border-radius: 15px;
+   	transition: all .8s ease;
+}
+#tit_carrito img{
+	height: 130px;
+}

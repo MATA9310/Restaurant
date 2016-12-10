@@ -122,7 +122,6 @@ nav{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
 	border-radius: 15px;
-	ba
    	transition: all .8s ease;
 
 }
@@ -150,6 +149,8 @@ nav{
 	color: #CE5100 !important;
 	border-radius: 15px;
 }
+
+
 /*#input-src{
 	display: none;
 	/*max-width: 200px;
