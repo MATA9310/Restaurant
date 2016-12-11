@@ -97,23 +97,46 @@ html(lang = "en")
 
 		div(class="col-md-12 col-xs-12" id="nav_carrito")
 			p(class="navbar-left text-center") Mi Carrito
-			ul(class="nav navbar-nav navbar-right text-center")
-							li
-								a(href="#") Vaciar Carrito
-									i(class="glyphicon glyphicon-shopping-cart pull-left")
+			a(href="#" class="navbar-right text-right") Vaciar Carrito
+				i(class="glyphicon glyphicon-shopping-cart pull-left")
+			br
+			br
+			br
+		div(class="container" )
 
-		div(class="table-responsive")
-			table(class="table table-hover")
-				tr
-					th Producto
-					th P. Unit
-					th Cantidad
-					th Subtotal
-					th Operacion
-				tr
-					td Audifonos
-					td $128.00
-					td 5
-					td $500.00
-					td 
-						a(href="#") Eliminar
+			div(class="table-responsive" id="carro")
+				table(class="table")
+					thead()
+						th Producto
+						th P. Unit
+						th Cantidad
+						th Subtotal
+						th Operacion
+					tr
+						td Audifonos
+						td $128.00
+						td 
+							form(name="formulario" id="formulario" action="" method="POST")
+								input(type="number" name="cantidad" min="1" max="10")
+
+						td $500.00
+						td 
+							a(href="#") Eliminar
+					tr
+						td Audifonos
+						td $128.00
+						td 
+							form(name="formulario" id="formulario" action="" method="POST")
+								input(type="number" name="cantidad" min="1" max="10")
+
+						td $500.00
+						td 
+							a(href="#") Eliminar
+					tr
+						td subtotal
+
+
+
+			div(class="text-right")
+				p Total: 
+				p $10.00
