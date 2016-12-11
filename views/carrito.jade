@@ -8,6 +8,7 @@ html(lang = "en")
 		link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
 		link( href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet")
 		link(href="css/estilo.css" rel="stylesheet")
 		link(href="css/carrito.css" rel="stylesheet")
 
@@ -95,14 +96,19 @@ html(lang = "en")
 		div(class="col-md-12 col-xs-12 text-center" id="tit_carrito")
 			img(class="logo" src="images/logo_elsabordeantequera.png" alt="Brand")
 
-		div(class="col-md-12 col-xs-12" id="nav_carrito")
-			p(class="navbar-left text-center") Mi Carrito
-			a(href="#" class="navbar-right text-right") Vaciar Carrito
-				i(class="glyphicon glyphicon-shopping-cart pull-left")
-			br
-			br
-			br
+
+		div(class="ROW")
+			div(class="col-md-12" )
+				p(class="text-center" id="tit_car") Mi Carrito
+			
+
+
 		div(class="container" )
+			div(class="col-md-12 text-right")
+				i(class="glyphicon glyphicon-shopping-cart ")
+				a(href="#" class="" id="vaciar") Vaciar Carrito
+				br
+		
 
 			div(class="table-responsive" id="carro")
 				table(class="table")
@@ -135,12 +141,12 @@ html(lang = "en")
 
 
 
-			div(class="text-right")
-				p Total: 
-				p $10.00
+			div(class="ROW")
+				div(class="col-md-12 text-right")
+					p Total: $100.00
 
-			br
-			br
+		br
+		br
 
 		div(class="ROW")
 				div(class="col-md-6")
@@ -148,22 +154,22 @@ html(lang = "en")
 						div(class="panel-heading")
 							h2 Informacion de Envio
 						dvi(class="panel-body")
-							br
-							p Introcuce la direccion de entrega correctamente ya que el 80% de los pedidos que no llegan rapido es debido a que dan una mal direccion de envio.
+							
+							p(class="txt_car") Introcuce la direccion de entrega correctamente ya que el 80% de los pedidos que no llegan rapido es debido a que dan una mal direccion de envio.
 				div(class="col-md-6 ")
 					div(class="panel panel-default")
 						div(class="panel-heading")
 							h2 Informacion de Pago
 						dvi(class="panel-body")
-							br
-							p Todos los datos poroporcionados acerca de tu tarjeta de predito seran tratados en base a las politicas de seguridad vigentes 
+							
+							p(class="txt_car") Todos los datos poroporcionados acerca de tu tarjeta de predito seran tratados en base a las politicas de seguridad vigentes 
 								a en este enlace.
 		div(class="ROW")
 
 			div(class="col-md-2 col-md-offset-10")
-				button Confirmar compra
-		br
-		br
-		br
+				button(id="confirmar") Confirmar compra
+				br
+				br
+				br
 
 	

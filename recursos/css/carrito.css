@@ -26,3 +26,19 @@ table tr td{
 thead{
 	text-align:  center;
 }
+#confirmar{
+	width: 100%;
+}
+#tit_car{
+	font-family: 'Architects Daughter', cursive;
+	font-size: 34px;
+}
+#vaciar{
+	font-family: 'Architects Daughter', cursive;
+	font-size: 18px;
+	padding-left: 15px;
+}
+.txt_car{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+}
