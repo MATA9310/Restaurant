@@ -9,6 +9,10 @@ html(lang = "en")
 		link( href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet")
+		script(src="https://use.fontawesome.com/dc6e7cc53c.js")
+		script(src="https://use.fontawesome.com/783e17f944.js")
 		link(href="css/estilo.css" rel="stylesheet")
 		link(href="css/carrito.css" rel="stylesheet")
 
@@ -151,21 +155,114 @@ html(lang = "en")
 		div(class="ROW")
 				div(class="col-md-6")
 					div(class="panel panel-default")
-						div(class="panel-heading")
-							h2 Informacion de Envio
-						dvi(class="panel-body")
-							
-							p(class="txt_car") Introcuce la direccion de entrega correctamente ya que el 80% de los pedidos que no llegan rapido es debido a que dan una mal direccion de envio.
+						div(class="panel-heading txt_panel text-center" )
+							h2 Información de Envio
+						div(class="panel-body")
+							p(class="txt_car text-justify") Intrduce la direccion de entrega correctamente ya que el 80% de los pedidos que no llegan rapido es debido a que dan una mala direccion de envio.
+							br
+							div(class="form-group")
+								label(for="name" class="control-label") Nombre de quien recibe
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-truck" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Escriba el nombre de la persona que recibira el paquete")
+							div(class="form-group")
+								label(for="name" class="control-label") Email
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-envelope" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Escriba el nombre de la persona que recibira el paquete")
+									span(class="input-group-addon")
+										i(class="fa fa-at" aria-hidden="true")
+									
+									div(class="input-group-btn" id="div-correo")
+										select(name="OS" id="cor-select") 
+											option(value="1") gmail.com
+											option(value="2") hotmail.com
+											option(value="3") itoaxaca.edu.mx
+											option(value="4") live.com.mx
+							div(class="form-group")
+								label(for="name" class="control-label") Direccion
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-address-book-o" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Escribe calle, colonia y numero")
+								div(class="input-group")		
+									span(class="input-group-addon")
+										i(class="fa fa-address-book-o" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Entre que calles esta el domicilio")
+							div(class="form-group")
+								label(for="name" class="control-label") Ciudad
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-location-arrow" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Ciudad")
+							div(class="form-group")
+								label(for="name" class="control-label") Telefonos
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-phone" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Telefono Fijo con LADA")
+									span(class="input-group-addon")
+										i(class="fa fa-mobile" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Telefono Celular con LADA")
+							div(class="form-group text-center col-md-12")
+								label(for="name" class="control-label") Codigo Postal
+								div(class="input-group text-center col-md-6 col-md-offset-3")
+									span(class="input-group-addon")
+										i(class="fa fa-street-view" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Codigo Postal")
+									
+
 				div(class="col-md-6 ")
 					div(class="panel panel-default")
-						div(class="panel-heading")
-							h2 Informacion de Pago
-						dvi(class="panel-body")
-							
-							p(class="txt_car") Todos los datos poroporcionados acerca de tu tarjeta de predito seran tratados en base a las politicas de seguridad vigentes 
+						div(class="panel-heading txt_panel text-center")
+							h2 Información de Pago
+						div(class="panel-body")
+							p(class="txt_car text-justify") Todos los datos poroporcionados acerca de tu tarjeta de credito seran tratados en base a las politicas de seguridad vigentes 
 								a en este enlace.
-		div(class="ROW")
+							br
+							div(class="ROW col-md-12")
+								div(class="col-md-6 col-md-offset-3")
+									img(src="images/CC-tipos.png" class="img-rounded" id="tipos-cc")
+									br
+									br
+									br
+									br
+							div(class="form-group")
+								label(for="name" class="control-label") Nombre del Titular
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-id-card-o" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Nombre que muestra la tarjeta")
+							div(class="ROW txt_car2")
+								div(class="col-md-3 col-sm-3 col-xs-3")
+									span(class="help-block text-muted small-font") Expiry Month
+									input(type="text" class="form-control" placeholder="MM")
+								div(class="col-md-3 col-sm-3 col-xs-3")
+									span(class="help-block text-muted small-font") Expiry Year
+									input(type="text" class="form-control" placeholder="YY")
+								div(class="col-md-3 col-sm-3 col-xs-3")
+									span(class="help-block text-muted small-font") CVV
+									input(type="text" class="form-control" placeholder="CVV")
+								div(class="col-md-3 col-sm-3 col-xs-3")
+									img(src="images/CC-64.png" class="img-rounded" id="img-credit")
+							div(class="form-group")
+								label(for="name" class="control-label") Numero de tarjeta
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-credit-card-alt" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="•••• •••• •••• ••••")
+								br
+								br
+								br
+								br
+								br
+								br
 
+		
+
+		div(class="ROW")
 			div(class="col-md-2 col-md-offset-10")
 				button(id="confirmar") Confirmar compra
 				br
