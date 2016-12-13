@@ -39,6 +39,11 @@ app.get("/home",function(req,res){
 	res.render("home");
 });
 
+app.get("/login",function(req,res){
+	//res.send("hola mundo");
+	res.render("login");
+});
+
 
 
 

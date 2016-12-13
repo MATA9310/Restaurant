@@ -1,0 +1,230 @@
+doctype html
+html(lang = "en")
+	head
+		title El Sabor Oaxaqueño
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Aref+Ruqaa:400,700" rel="stylesheet")
+		script(src="https://use.fontawesome.com/dc6e7cc53c.js")
+		script(src="https://use.fontawesome.com/783e17f944.js")
+		link(href="css/estilo.css" rel="stylesheet")
+		link(href="css/carrito.css" rel="stylesheet")
+		link(href="css/obj.css" rel="stylesheet")
+
+		
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+		script(src="js/nav-bar.js")
+
+	body
+		header
+			nav(class="navbar navbar-default customnavbar")
+				div(class="container-fluid")
+					div(class="navbar-header")
+						
+						a(class="navbar-brand")
+							img(class="logo" src="images/logo_elsabordeantequera.png" alt="Brand")
+						p(class="nueva navbar-text") Restaurant Buffet
+					
+					div(class="navbar-header navbar-right" id="buscar")
+						ul(class="nav navbar-nav")
+							li(id="busqueda")
+								form(action="./" method="POST")
+									div(class="input-group" id="div-src")
+										input(type="text" id="input-src" class="form-control")
+										span(class="input-group-btn" id="btn-src")
+											button(class="btn btn-default" type="button")
+												i(class="glyphicon glyphicon-search")
+											a(href="#" class="btn btn-default" id="close-src")
+												i(class="glyphicon glyphicon-remove")
+								a(href="#" id="search" ) Buscar
+									i(class="glyphicon glyphicon-search pull-left")
+
+							li(class="espacio-izq" id="login")
+								a(href="#") Entrar/Registrar
+									i(class="glyphicon glyphicon-user pull-left")
+			nav(class="navbar navbar-default navbar-m")
+				div(class="container-fluid")
+					div(class="navbar-header")
+					button(type="button" class="navbar-toggle collapsed menu_peke" data-toggle="collapse" data-target="#bs-example-nabvar-collapse-1" aria-expanded="false" id="menu_peke")
+						span(class="sr-only")
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+					div(class="collapse navbar-collapse" id="bs-example-nabvar-collapse-1")
+						ul(class="nav navbar-nav navbar-left text-center")
+							li
+								a(href="#") Inicio
+							li(class="dropdown")
+								a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ) Nosotros
+									span(class="caret")
+								ul(class="dropdown-menu dropdown" id="hola")
+									li
+										a(href="#") Servicios
+									li
+										a(href="#") Mision
+									li
+										a(href="#") Vision
+									li
+										a(href="#") Contacto
+									li
+										a(href="#") Acerca de
+
+
+							li
+								a(href="#") Eventos
+							li(class="dropdown")
+								a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button") Gastronomia
+									span(class="caret")
+								ul(class="dropdown-menu")
+									li
+										a(href="#") Desayunos
+									li
+										a(href="#") Comidas
+									li
+										a(href="#") Cenas
+									li
+										a(href="#") Postres
+
+						ul(class="nav navbar-nav navbar-right text-center")
+							li
+								a(href="#") Sub: $0.00
+									i(class="glyphicon glyphicon-shopping-cart pull-left")
+
+		
+		br
+		br
+
+		div(class="ROW")
+				div(class="col-md-6")
+					div(class="panel panel-default" id="panel-g")
+						div(class="panel-heading txt_panel text-center" id="panel-g")
+							h2 Información de Registro
+						div(class="panel-body")
+							br
+							div(class="form-group")
+								label(for="name" class="control-label") Nombre Completo
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-user-circle-o" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Escriba tu nombre completo")
+							div(class="form-group")
+								label(for="name" class="control-label") Email
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-envelope" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Escriba tu email valido")
+									span(class="input-group-addon")
+										i(class="fa fa-at" aria-hidden="true")
+									
+									div(class="input-group-btn" id="div-correo")
+										select(name="OS" id="cor-select") 
+											option(value="1") gmail.com
+											option(value="2") hotmail.com
+											option(value="3") itoaxaca.edu.mx
+											option(value="4") live.com.mx
+							div(class="form-group")
+								label(for="name" class="control-label") Contraseña
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-key" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Escribe tu contraseña")
+								
+
+							div(class="form-group text-center col-md-12")
+								div(class="input-group text-center col-md-6 col-md-offset-3")
+									button(id="confirmar") Registrarte
+									
+				
+				
+
+
+				div(class="col-md-6")
+					div(class="panel panel-default" id="panel-g")
+						div(class="panel-heading txt_panel text-center" id="panel-g")
+							h2 Iniciar Sesión
+						div(class="panel-body")
+							br
+							div(class="form-group")
+								label(for="name" class="control-label") Email
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-envelope" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Escriba tu email valido")
+									span(class="input-group-addon")
+										i(class="fa fa-at" aria-hidden="true")
+									
+									div(class="input-group-btn" id="div-correo")
+										select(name="OS" id="cor-select") 
+											option(value="1") gmail.com
+											option(value="2") hotmail.com
+											option(value="3") itoaxaca.edu.mx
+											option(value="4") live.com.mx
+							div(class="form-group")
+								label(for="name" class="control-label") Contraseña
+								div(class="input-group")
+									span(class="input-group-addon")
+										i(class="fa fa-key" aria-hidden="true")
+									input(type="text" class="form-control" name="name" id="name"  placeholder="Escribe tu contraseña")
+							br
+							br
+							br
+							br
+								
+
+							div(class="form-group text-center col-md-12")
+								div(class="input-group text-center col-md-6 col-md-offset-3")
+									button(id="confirmar") Iniciar Sesion
+
+								
+
+		
+
+		br
+		br
+		br
+
+	
+		div(class="ROW text-center")
+			div(class="col-md-12" id="redes")
+				label(class="control-label") Acerca de Nosotros:
+				br
+				br
+			
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="images/fb-icon.png" class="img-rounded img-footer")
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="images/tw-icon.png" class="img-rounded img-footer")
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="images/ins-icon.ico" class="img-rounded img-footer")
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="images/galery-icon.png" class="img-rounded img-footer")
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="images/contacto-1.png" class="img-rounded img-footer")
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="images/maps-icon.png" class="img-rounded img-footer")
+
+			div(class="col-md-12" id="redes3")
+				br
+				label(class="control-label") JAS Company 
+					© Todos los derechos reservados
+				br
+				br
+
+
+
+	
