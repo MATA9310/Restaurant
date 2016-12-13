@@ -85,3 +85,30 @@ thead{
 	transition: all .6s ease;
 
 }
+#redes{
+	padding-top: 15px;
+	background-color: #FFAA28 !important;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	color:white;
+	height: 60px;
+}
+.img-footer{
+	width: 70px;
+}
+#redes2{
+	padding-top: 15px;
+	background-color: #FFAA28 !important;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	color:white;
+	height: 100px;
+}
+
+#redes3{
+	background-color: #781000 !important;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	color:white;
+	height: 60px;
+}
