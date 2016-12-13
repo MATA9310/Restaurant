@@ -112,3 +112,8 @@ thead{
 	color:white;
 	height: 60px;
 }
+#total_compra{
+	color:#FF8F00;
+	font-family: 'Jockey One', sans-serif;
+	font-size: 30px;
+}

@@ -31,7 +31,14 @@
 		display: none;
 	}
 	.customnavbar{
-	height: 70px !important;
+		height: 70px !important;
+	}
+	.navbar-m .navbar-header button{
+		margin-top: 16px !important;
+		margin-bottom: 0px !important;
+	}
+	.navbar-m .navbar-collapse{
+		margin-top:55px !important;
 	}
 }
 
@@ -94,14 +101,20 @@ nav{
 }
 /*otras cosas*/
 .logo{
-	height: 30px;
+	height: 55px;
 	border: 0px;
 	margin: 0px;
 }
 
+
 .pacifico{
 	font-family: 'Pacifico', cursive;
 	font-size: 20px;
+	color: #CE5100 !important;
+}
+.nueva{
+	font-family: 'Aref Ruqaa', serif;
+	font-size: 24px;
 	color: #CE5100 !important;
 }
 
@@ -149,6 +162,36 @@ nav{
 	color: #CE5100 !important;
 	border-radius: 15px;
 }
+#menu_peke{
+	background-color: #E8B34A !important;
+	border-radius: 15px;
+   	transition: all .8s ease;
+   	border:0px;
+}
+#menu_peke span{
+	background-color: #420000;
+	border-color: #420000;
+	border-radius: 15px;
+   	transition: all .8s ease;
+   	border:0px;
+}
+
+#menu_peke:hover{
+	background-color: #420000!important;
+	border-radius: 15px;
+   	transition: all .8s ease;
+   	border:0px;
+}
+
+#menu_peke:hover > span{
+	background-color: #E8B34A ;
+	border-color: #E8B34A ;
+	border-radius: 15px;
+   	transition: all .8s ease;
+   	border:0px;
+}
+
+
 
 
 /*#input-src{
