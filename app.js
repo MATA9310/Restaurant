@@ -18,6 +18,27 @@ app.get("/desayunos",function(req,res){
 	//res.send("hola mundo");
 	res.render("desayunos");
 });
+app.get("/servicios",function(req,res){
+	//res.send("hola mundo");
+	res.render("servicios");
+});
+app.get("/mision",function(req,res){
+	//res.send("hola mundo");
+	res.render("mision");
+});
+app.get("/vision",function(req,res){
+	//res.send("hola mundo");
+	res.render("vision");
+});
+app.get("/eventos",function(req,res){
+	//res.send("hola mundo");
+	res.render("eventos");
+});
+app.get("/home",function(req,res){
+	//res.send("hola mundo");
+	res.render("home");
+});
+
 
 
 

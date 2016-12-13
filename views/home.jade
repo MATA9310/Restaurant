@@ -16,7 +16,7 @@ html(lang = "en")
 		script(src="https://use.fontawesome.com/783e17f944.js")
 		link(href="css/estilo.css" rel="stylesheet")
 		link(href="css/carrito.css" rel="stylesheet")
-		link(href="css/productos.css" rel="stylesheet")
+		link(href="css/obj.css" rel="stylesheet")
 
 		
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
@@ -98,47 +98,67 @@ html(lang = "en")
 							li
 								a(href="#") Sub: $0.00
 									i(class="glyphicon glyphicon-shopping-cart pull-left")
+
+		div()
+			div()
+				div(id="carrusel1" class="carousel slide" data-ride="carousel")
+					ol(class="carousel-indicators")
+						li(data-target="#carrusel1" data-slide-to="0" class="active")
+						li(data-target="#carrusel1" data-slide-to="1")
+						li(data-target="#carrusel1" data-slide-to="2")
+
+					div(class="carousel-inner" role="listbox")
+						div(class="item active")
+							img( src="images/c02.jpg" class="img-responsive tales" alt="")
+							div(class="carousel-caption")
+								img( src="images/logo_elsabordeantequera.png" class=" tales2" alt="")
+								h3(id="tit-carru") Envios gratis a domicilio en todo el menu
+								
+						div(class="item")
+							img( src="images/Eventos/e02.jpg" class="img-responsive tales" alt="")
+							div(class="carousel-caption")
+								
+						div(class="item")
+							img( src="images/c03.jpg" class="img-responsive tales" alt="")
+							div(class="carousel-caption")
+								img( src="images/logo_elsabordeantequera.png" class=" tales2" alt="")
+								h3(id="tit-carru") Envios gratis a domicilio en todo el menu
+								
+
+					a(href="#carrusel1" class="left carousel-control" role="button" data-slide="prev")
+						span(class="glyphicon glyphicon-chevron-left" aria-hidden="true")
+						span(class="sr-only") Anterior
+
+					a(href="#carrusel1" class="right carousel-control" role="button" data-slide="next")
+						span(class="glyphicon glyphicon-chevron-right" aria-hidden="true")
+						span(class="sr-only") Anterior
+
+		
+		div(class="ROW")
+			div(class="col-md-8 col-md-offset-2")
+				div(class="panel panel-default" id="panel-g")
+					div(class="panel-heading txt_panel text-center" id="panel-g")
+						h2 A solo 15 minutos de la ciudad de Oaxaca
+					div(class="panel-body")
+						p(class="txt_car text-center") K.m 0.700 Carret. A San Agustin Yatareni, Oaxaca MEXICO.
+						br
+						p(class="txt_car text-center") Tel. (951) 51 7 66 55, 51 7 55 50
+						br
+						p(class="txt_car text-justify") Somos una empresa restaurantera, que ofrece el mejor buffet de Oaxaca, busca la satisfacción de nuestros clientes externos, a trvés de una constante innovacion, atención personalizada y variedad en los platillos, así como el crecimiento personal y profesion de nuestros clientes internos, procurando el trabajo en un ambiente familiar. Estamos comprometidos con la sociedad a traves de la generación de empleos y la labor altruista.
+						
+
+		div(class="ROW")
+			div(class=" col-md-10 col-md-offset-1")
+				div(class="thumbnail")
+					img(src="images/h01.jpg" alt="" class="img-rounded")
 		br
 		br
-		div(class="ROW")
-			div(class="col-md-12" )
-				p(class="text-center" id="tit_car") Desayunos
-				br
-				br
-				br
-		div(class="ROW")
-			div(class="col-sm-6 col-md-3")
-				div(class="thumbnail")
-					img(src="images/Desayuno/icon-1.jpg" alt="" class="img-rounded")
-					div(class="caption")
-						h3(id="tit-pro") Titulo de la Imagen
-						p(id="description") Esta es la descripcion
-						a(href="#" class="btn btn-primary" role="button" id="btn-producto") Agregar
-							i(class="glyphicon glyphicon-shopping-cart pull-left" id="icon-car")
-			div(class="col-sm-6 col-md-3")
-				div(class="thumbnail")
-					img(src="images/Desayuno/icon-1.jpg" alt="" class="img-rounded")
-					div(class="caption")
-						h3(id="tit-pro") Titulo de la Imagen
-						p(id="description") Esta es la descripcion
-						a(href="#" class="btn btn-primary" role="button" id="btn-producto") Agregar
-							i(class="glyphicon glyphicon-shopping-cart pull-left" id="icon-car")
-			div(class="col-sm-6 col-md-3")
-				div(class="thumbnail")
-					img(src="images/Desayuno/icon-1.jpg" alt="" class="img-rounded")
-					div(class="caption")
-						h3(id="tit-pro") Titulo de la Imagen
-						p(id="description") Esta es la descripcion
-						a(href="#" class="btn btn-primary" role="button" id="btn-producto") Agregar
-							i(class="glyphicon glyphicon-shopping-cart pull-left" id="icon-car")
-			div(class="col-sm-6 col-md-3")
-				div(class="thumbnail")
-					img(src="images/Desayuno/icon-1.jpg" alt="" class="img-rounded")
-					div(class="caption")
-						h3(id="tit-pro") Titulo de la Imagen
-						p(id="description") Esta es la descripcion
-						a(href="#" class="btn btn-primary" role="button" id="btn-producto") Agregar
-							i(class="glyphicon glyphicon-shopping-cart pull-left" id="icon-car")
+
+		
+
+
+
+
 
 		div(class="ROW text-center")
 			div(class="col-md-12 col-xs-12" id="redes")

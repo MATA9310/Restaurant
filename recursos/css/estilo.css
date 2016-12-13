@@ -190,6 +190,18 @@ nav{
    	transition: all .8s ease;
    	border:0px;
 }
+#tit-carru{
+	font-family: 'Aref Ruqaa', serif !important;
+	font-size: 24px;
+}
+.tales{
+	height: 400px !important;
+	width: 100% !important;
+}
+.tales2{
+	height: 200px !important;
+	/*width: 100% !important;*/
+}
 
 
 
