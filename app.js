@@ -14,6 +14,11 @@ app.get("/carrito",function(req,res){
 	//res.send("hola mundo");
 	res.render("carrito");
 });
+app.get("/desayunos",function(req,res){
+	//res.send("hola mundo");
+	res.render("desayunos");
+});
+
 
 
 app.listen(8080);

@@ -1,0 +1,23 @@
+#btn-producto{
+	background-color: #FF8F00;
+	border: 0px;
+	border-radius: 10px;
+	color: white;
+	font-family: 'Jockey One', sans-serif;
+	font-size: 16px;
+}
+#btn-producto:hover{
+	background-color: #FF7800;
+	transition: all .6s ease
+}
+#icon-car{
+	padding-right: 10px !important;
+	font-size: 18px;
+}
+#tit-pro{
+	font-family: 'Jockey One', sans-serif;
+}
+#description{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+}
