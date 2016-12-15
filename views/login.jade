@@ -23,6 +23,8 @@ html(lang = "en")
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
 		script(src="js/nav-bar.js")
+		script(src="/js/jquery-3.1.1.js")
+		script(src="/js/carrito.js")
 
 	body
 		header
@@ -49,7 +51,7 @@ html(lang = "en")
 									i(class="glyphicon glyphicon-search pull-left")
 
 							li(class="espacio-izq" id="login")
-								a(href="#") Entrar/Registrar
+								a(href="/login" id="inicio")
 									i(class="glyphicon glyphicon-user pull-left")
 			nav(class="navbar navbar-default navbar-m")
 				div(class="container-fluid")
@@ -63,17 +65,17 @@ html(lang = "en")
 					div(class="collapse navbar-collapse" id="bs-example-nabvar-collapse-1")
 						ul(class="nav navbar-nav navbar-left text-center")
 							li
-								a(href="#") Inicio
+								a(href="/home") Inicio
 							li(class="dropdown")
 								a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ) Nosotros
 									span(class="caret")
 								ul(class="dropdown-menu dropdown" id="hola")
 									li
-										a(href="#") Servicios
+										a(href="/Servicios") Servicios
 									li
-										a(href="#") Mision
+										a(href="/Mision") Mision
 									li
-										a(href="#") Vision
+										a(href="/Vision") Vision
 									li
 										a(href="#") Contacto
 									li
@@ -81,23 +83,23 @@ html(lang = "en")
 
 
 							li
-								a(href="#") Eventos
+								a(href="/Eventos") Eventos
 							li(class="dropdown")
 								a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button") Gastronomia
 									span(class="caret")
 								ul(class="dropdown-menu")
 									li
-										a(href="#") Desayunos
+										a(href="/menu/Desayunos") Desayunos
 									li
-										a(href="#") Comidas
+										a(href="/menu/Comidas") Comidas
 									li
-										a(href="#") Cenas
+										a(href="/menu/Cenas") Cenas
 									li
-										a(href="#") Postres
+										a(href="/menu/Postres") Postres
 
 						ul(class="nav navbar-nav navbar-right text-center")
 							li
-								a(href="#") Sub: $0.00
+								a(href="/carrito") Sub: $0.00
 									i(class="glyphicon glyphicon-shopping-cart pull-left")
 
 		
@@ -116,13 +118,13 @@ html(lang = "en")
 								div(class="input-group")
 									span(class="input-group-addon")
 										i(class="fa fa-user-circle-o" aria-hidden="true")
-									input(type="text" class="form-control" name="name" id="name"  placeholder="Escriba tu nombre completo")
+									input(type="text" class="form-control" name="name" placeholder="Escriba tu nombre completo" id="Rnombre")
 							div(class="form-group")
 								label(for="name" class="control-label") Email
 								div(class="input-group")
 									span(class="input-group-addon")
 										i(class="fa fa-envelope" aria-hidden="true")
-									input(type="text" class="form-control" name="name" id="name"  placeholder="Escriba tu email valido")
+									input(type="text" class="form-control" name="name" placeholder="Escriba tu email valido" id="Rcorreo")
 									span(class="input-group-addon")
 										i(class="fa fa-at" aria-hidden="true")
 									
@@ -137,12 +139,12 @@ html(lang = "en")
 								div(class="input-group")
 									span(class="input-group-addon")
 										i(class="fa fa-key" aria-hidden="true")
-									input(type="text" class="form-control" name="name" id="name"  placeholder="Escribe tu contraseña")
+									input(type="text" class="form-control" name="name" placeholder="Escribe tu contraseña" id="Rcontraseña")
 								
 
 							div(class="form-group text-center col-md-12")
 								div(class="input-group text-center col-md-6 col-md-offset-3")
-									button(id="confirmar") Registrarte
+									button(id="confirmar" onClick="registro()") Registrarte
 									
 				
 				
@@ -159,12 +161,12 @@ html(lang = "en")
 								div(class="input-group")
 									span(class="input-group-addon")
 										i(class="fa fa-envelope" aria-hidden="true")
-									input(type="text" class="form-control" name="name" id="name"  placeholder="Escriba tu email valido")
+									input(type="text" class="form-control" placeholder="Escriba tu email valido" id="lcorreo")
 									span(class="input-group-addon")
 										i(class="fa fa-at" aria-hidden="true")
 									
 									div(class="input-group-btn" id="div-correo")
-										select(name="OS" id="cor-select") 
+										select(name="OS" id="lcor-select") 
 											option(value="1") gmail.com
 											option(value="2") hotmail.com
 											option(value="3") itoaxaca.edu.mx
@@ -174,7 +176,7 @@ html(lang = "en")
 								div(class="input-group")
 									span(class="input-group-addon")
 										i(class="fa fa-key" aria-hidden="true")
-									input(type="text" class="form-control" name="name" id="name"  placeholder="Escribe tu contraseña")
+									input(type="text" class="form-control" placeholder="Escribe tu contraseña" id="lcontraseña")
 							br
 							br
 							br
@@ -183,7 +185,7 @@ html(lang = "en")
 
 							div(class="form-group text-center col-md-12")
 								div(class="input-group text-center col-md-6 col-md-offset-3")
-									button(id="confirmar") Iniciar Sesion
+									button(id="confirmar" onClick="login()") Iniciar Sesion
 
 								
 

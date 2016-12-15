@@ -60,7 +60,7 @@ thead{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 15px;
 }
-#cor-select{
+#cor-select, #lcor-select{
 	width: 100%;
 	height: 100%;
 }

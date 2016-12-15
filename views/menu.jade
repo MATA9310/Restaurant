@@ -1,0 +1,154 @@
+doctype html
+html(lang = "en")
+	head
+		title El Sabor Oaxaqueño
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Aref+Ruqaa:400,700" rel="stylesheet")
+		script(src="https://use.fontawesome.com/dc6e7cc53c.js")
+		script(src="https://use.fontawesome.com/783e17f944.js")
+		link(href="/css/estilo.css" rel="stylesheet")
+		link(href="/css/carrito.css" rel="stylesheet")
+		link(href="/css/productos.css" rel="stylesheet")
+
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+		script(src="/js/nav-bar.js")
+		script(src="/js/jquery-3.1.1.js")
+		script(src="/js/carrito.js")
+
+	body
+		header
+			nav(class="navbar navbar-default customnavbar")
+				div(class="container-fluid")
+					div(class="navbar-header")
+						
+						a(class="navbar-brand")
+							img(class="logo" src="/images/logo_elsabordeantequera.png" alt="Brand")
+						p(class="nueva navbar-text") Restaurant Buffet
+					
+					div(class="navbar-header navbar-right" id="buscar")
+						ul(class="nav navbar-nav")
+							li(id="busqueda")
+								form(action="./" method="POST")
+									div(class="input-group" id="div-src")
+										input(type="text" id="input-src" class="form-control")
+										span(class="input-group-btn" id="btn-src")
+											button(class="btn btn-default" type="button")
+												i(class="glyphicon glyphicon-search")
+											a(href="#" class="btn btn-default" id="close-src")
+												i(class="glyphicon glyphicon-remove")
+								a(href="#" id="search" ) Buscar
+									i(class="glyphicon glyphicon-search pull-left")
+
+							li(class="espacio-izq" id="login")
+								a(href="/login" id="inicio")
+									i(class="glyphicon glyphicon-user pull-left")
+			nav(class="navbar navbar-default navbar-m")
+				div(class="container-fluid")
+					div(class="navbar-header")
+					button(type="button" class="navbar-toggle collapsed menu_peke" data-toggle="collapse" data-target="#bs-example-nabvar-collapse-1" aria-expanded="false" id="menu_peke")
+						span(class="sr-only")
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+					div(class="collapse navbar-collapse" id="bs-example-nabvar-collapse-1")
+						ul(class="nav navbar-nav navbar-left text-center")
+							li
+								a(href="/Home") Inicio
+							li(class="dropdown")
+								a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ) Nosotros
+									span(class="caret")
+								ul(class="dropdown-menu dropdown" id="hola")
+									li
+										a(href="/Servicios") Servicios
+									li
+										a(href="/Mision") Mision
+									li
+										a(href="/Vision") Vision
+									li
+										a(href="") Contacto
+									li
+										a(href="") Acerca de
+
+							li
+								a(href="/Eventos") Eventos
+							li(class="dropdown")
+								a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button") Gastronomia
+									span(class="caret")
+								ul(class="dropdown-menu")
+									li
+										a(href="/Menu/Desayunos") Desayunos
+									li
+										a(href="/Menu/Comidas") Comidas
+									li
+										a(href="/Menu/Cenas") Cenas
+									li
+										a(href="/Menu/Postres") Postres
+
+						ul(class="nav navbar-nav navbar-right text-center")
+							li
+								a(href="/carrito") Sub: $0.00
+									i(class="glyphicon glyphicon-shopping-cart pull-left")
+		br
+		br
+		div(class="ROW")
+			div(class="col-md-12" )
+				p(class="text-center" id="tit_car") #{titulo}
+				br
+				br
+				br
+		//-var obj = JSON.parse(json)
+		//-for(var prop in datos)
+		//- p #{prop}: #{ob[prop]}
+		div(class="ROW")
+			each key in json
+				div(class="col-sm-6 col-md-3")
+					div(class="thumbnail")
+						img(src="/images/Desayuno/#{key.nombre}.jpg" alt="" class="img-rounded")
+						div(class="caption text-center")
+							h3(id="tit-pro") #{key.nombre}
+							p(id="description") $ #{key.precio}
+							a(class="btn btn-primary" role="button" id="btn-producto" name= "#{key.idproducto}" onClick="carro(this)") Agregar
+								i(class="glyphicon glyphicon-shopping-cart pull-left" id="icon-car" name= "#{key.idproducto}" )
+
+
+
+		div(class="ROW text-center")
+			div(class="col-md-12 col-xs-12" id="redes")
+				label(class="control-label") Acerca de Nosotros:
+				br
+				br
+			
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="/images/fb-icon.png" class="img-rounded img-footer")
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="/images/tw-icon.png" class="img-rounded img-footer")
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="/images/ins-icon.ico" class="img-rounded img-footer")
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="/images/galery-icon.png" class="img-rounded img-footer")
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="/images/contacto-1.png" class="img-rounded img-footer")
+			div(class="col-md-2 col-sm-2 col-xs-2" id="redes2")
+				a(href="#")
+					img(src="/images/maps-icon.png" class="img-rounded img-footer")
+
+			div(class="col-md-12 col-xs-12" id="redes3")
+				br
+				label(class="control-label") JAS Company© Todos los derechos reservados
+				br
+				br
